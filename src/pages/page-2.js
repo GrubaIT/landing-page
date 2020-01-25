@@ -1,16 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Subpage } from '../containers/subpage';
 
 const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+    <Subpage seoTitle="Page two" title="Testowa strona">
+        <p>Welcome to page 2</p>
+        <Link to="/">Go back to the homepage</Link>
+    </Subpage>
+);
 
-export default SecondPage
+export default SecondPage;
